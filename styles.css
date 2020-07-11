@@ -1,9 +1,34 @@
-h1 {
-        color: rgb(64, 64, 68);
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 20;
-        margin: 10px 10px;
+html, body { margin: 0; padding: 0;}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . main main . . . . ."
+        ". . . . . main main . . . . ."
+        ". . . . . main main . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    color: rgb(64, 64, 68);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20;
+    margin: 10px 10px;
 }
 
 #signin {
@@ -18,29 +43,12 @@ h1 {
 }
 
 
-#logo {
-    margin: auto;
-    position: relative;
-    left: 250px;
-    bottom: 25px;
-}
-
 #searchbar {
-    margin: auto;
-    position: relative;
-    right: 125px;
-    top: 90px;
     width: 550px;
     height: 40px;
     border-radius: 20px;
     border-color: rgb(184, 184, 184);
     border-width: 1px;
-}
-
-.buttons {
-    margin: auto;
-    position: relative;
-    top: 125px;
 }
 
 #googlesearch {
@@ -81,63 +89,45 @@ h1 {
     color: black;
 }
 
-.topleft {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    margin: auto;
-    padding: auto;
-}
-
-.topright {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    margin: auto;
-    padding: auto;
-}
-
-.topright h1 {
-    font-weight: 500;
+nav {
+    grid-area: nav;
 }
 
 main {
-    display: grid;
-    position: absolute;
-    top: 25%;
-    right: 50%;
-    bottom: 50%;
-    left: 50%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: main;
+    float: center;
     justify-content: center;
     align-items: center;
 }
 
-.footerleft {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    margin: auto;
-    padding: auto;
+
+footer {
+    grid-area: footer;
 }
 
-.footerleft h1 {
-    font-size: 15px;
-    color: gray;
+
+.tl {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.footerright {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 20px;
+.tr {
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.footerright h1 {
-    font-size: 15px;
-    color: gray;
+.bl {
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.br {
+    float: right;
+    justify-content: center;
+    align-items: center;
 }
