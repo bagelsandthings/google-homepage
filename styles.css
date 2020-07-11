@@ -1,0 +1,143 @@
+h1 {
+        color: rgb(64, 64, 68);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 20;
+        margin: 10px 10px;
+}
+
+#signin {
+    background-color: rgb(69, 139, 245);
+    color: white;
+    border-radius: 3px;
+    width: 65px;
+    border: transparent;
+    height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+#logo {
+    margin: auto;
+    position: relative;
+    left: 250px;
+    bottom: 25px;
+}
+
+#searchbar {
+    margin: auto;
+    position: relative;
+    right: 125px;
+    top: 90px;
+    width: 550px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgb(184, 184, 184);
+    border-width: 1px;
+}
+
+.buttons {
+    margin: auto;
+    position: relative;
+    top: 125px;
+}
+
+#googlesearch {
+    border: transparent;
+    background-color: rgb(248, 246, 246);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: gray;
+}
+
+#googlesearch:hover {
+    cursor: pointer;
+    border: solid;
+    border-color: rgb(170, 170, 170);
+    border-width: 1px;
+    color: black;
+}
+
+#lucky {
+    border: transparent;
+    background-color: rgb(248, 246, 246);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: gray;
+}
+
+#lucky:hover {
+    cursor: pointer;
+    border: solid;
+    border-color: rgb(170, 170, 170);
+    border-width: 1px;
+    color: black;
+}
+
+.topleft {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    margin: auto;
+    padding: auto;
+}
+
+.topright {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    margin: auto;
+    padding: auto;
+}
+
+.topright h1 {
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerleft {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+    padding: auto;
+}
+
+.footerleft h1 {
+    font-size: 15px;
+    color: gray;
+}
+
+.footerright {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.footerright h1 {
+    font-size: 15px;
+    color: gray;
+}
